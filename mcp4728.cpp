@@ -122,9 +122,9 @@ Input value = 0, Voltage Reference = 1 (internal), Gain = 0, PowerDown = 0
 uint8_t mcp4728::eepromReset()
 {
   _values[0] = _values[1] = _values[2] = _values[3] = 0;
-  _intVref[0] = _intVref[0] = _intVref[0] = _intVref[0] = 1;
+  _intVref[0] = _intVref[1] = _intVref[2] = _intVref[3] = 1;
   _gain[0] = _gain[1] = _gain[2] = _gain[3] = 0;
-  _powerDown[0] = _powerDown[0] = _powerDown[0] = _powerDown[0] = 0;
+  _powerDown[0] = _powerDown[1] = _powerDown[2] = _powerDown[3] = 0;
   return seqWrite();
 }
 
